@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforme Sua Vida</title>
+    <link rel="stylesheet" href="./css/index-style.css">
+</head>
+<script>
+    function toggleContent() {
+        var content = document.getElementById("hiddenContent");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+<body>
+    <header>
+        <h1>Mude Sua Vida Agora</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#videos">Vídeos e Métodos</a>
+            <a href="#rotinas">Rotinas Personalizadas</a>
+            <a href="#comunidade">Comunidade</a>
+            <a href="#suporte">Suporte</a>
+        </nav>
+    </header>
+    
+    <main>
+        <class>
+            <section class="intro">
+                <h2>Você quer mudar, mas não sabe como?</h2>
+                <p>Aqui você encontrará métodos práticos para vencer vícios, melhorar hábitos e transformar sua mentalidade.</p>
+                <button class="btn" onclick="toggleContent()">Saiba Mais</button>
+
+                <!-- Informar conteúdo que será exibido ao clicar em "saiba mais" -->
+                <div id="hiddenContent" class="content hidden">
+                    <h2>Mais Sobre a Transformação</h2>
+                    <p>Nosso objetivo é fornecer recursos eficazes para ajudar você a se livrar de maus hábitos, desenvolver uma mentalidade forte e alcançar crescimento pessoal e financeiro.</p>
+                </div>
+            </section>
+        </class>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Transforme Sua Vida. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
