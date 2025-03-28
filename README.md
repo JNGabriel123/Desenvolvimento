@@ -20,4 +20,3 @@
 #	css/
 #	js/
 #	teste.html
-#
