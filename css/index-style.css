@@ -2,22 +2,46 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #363636;
     color: #333;
     text-align: center;
 }
 
 header {
-    background: #222;
+    background: #292929;
     color: white;
-    padding: 20px;
+    padding-top: 5px;
 }
 
-nav {
+.header {
+    display: flex;
+    margin-top: 10px;
+    margin: 2%;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.center {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
+}
+
+.image {
+    padding: 0 20px 0 0;
+}
+
+.logo{
+    height: 70px;
+    margin: 0 30px 20px 0;
+}
+
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 40px;
 }
 
 nav a {
@@ -28,6 +52,13 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+.title {
+    text-align: center;
+    flex: 2;
+    font-size: 24px;
+    color: white;
 }
 
 .intro {

@@ -8,4 +8,12 @@
 // A = 2, B = 3, C = 2, D = 6
 
 
-var numberRandom = Math.floor(Math.random() * 100) + 1;
+
+function toggleContent() {
+    var content = document.getElementById("hiddenContent");
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}

@@ -6,29 +6,27 @@
     <title>Transforme Sua Vida</title>
     <link rel="stylesheet" href="./css/index-style.css">
 </head>
-<script>
-    function toggleContent() {
-        var content = document.getElementById("hiddenContent");
-        if (content.style.display === "none" || content.style.display === "") {
-            content.style.display = "block";
-        } else {
-            content.style.display = "none";
-        }
-    }
-</script>
 <body>
     <header>
-        <h1>Mude Sua Vida Agora</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#videos">Vídeos e Métodos</a>
-            <a href="#rotinas">Rotinas Personalizadas</a>
-            <a href="#comunidade">Comunidade</a>
-            <a href="#suporte">Suporte</a>
-        </nav>
+        <div class="header">
+            <div class="image center">
+                <img src="assets/img/unmind_image.png" alt="Logo" class="logo">
+            </div>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#videos">Vídeos e Métodos</a>
+                <a href="#rotinas">Rotinas Personalizadas</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#suporte">Suporte</a>
+            </nav>
+        </div>
     </header>
     
     <main>
+
+        <h1 class="title center">Mude Sua Vida Agora</h1>
+
         <class>
             <section class="intro">
                 <h2>Você quer mudar, mas não sabe como?</h2>
@@ -47,5 +45,7 @@
     <footer>
         <p>&copy; 2025 Transforme Sua Vida. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/interação.js"></script>
 </body>
 </html>
