@@ -4,26 +4,28 @@ body {
     padding: 0;
     background-color: #363636;
     color: #333;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header {
     background: #292929;
     color: white;
-    padding-top: 5px;
+    padding-top: 0.5%;
+}
+
+header nav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .header {
     display: flex;
-    margin-top: 10px;
-    margin: 2%;
-    padding: 0 10px;
-    align-items: center;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
+    /* margin-top: 10px; */
+    margin: 2% 0 0 2%;
+    /* padding: 2% 0 0 0; */
+    /* align-items: center; */
 }
 
 .image {
@@ -37,21 +39,25 @@ header {
 
 
 nav {
-    align-items: center;
+    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 100px;
-    margin-left: 40px;
+    /* padding: 0px 0; */
+    font-size: 18px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: rgb(38, 101, 236);
+    font-size: 22px;
 }
 
 .title {
