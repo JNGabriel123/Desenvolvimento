@@ -1,57 +1,56 @@
-body {
+html body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #363636;
     color: #333;
-    text-align: center;
+    height: 100%;
 }
 
 header {
     background: #292929;
     color: white;
-    padding-top: 5px;
+    padding-top: 1px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+header nav, .menu{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: 18px;
+    margin: auto;
+    
 }
 
 .header {
     display: flex;
-    margin-top: 10px;
-    margin: 2%;
-    padding: 0 10px;
-    align-items: center;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
+    margin: 13px;
 }
 
 .image {
-    padding: 0 20px 0 0;
+    margin: 5px;
 }
 
 .logo{
     height: 70px;
-    margin: 0 30px 20px 0;
+    margin: 5px;
 }
 
-
-nav {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-left: 40px;
-}
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.2s;
+    animation-delay: 1s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(38, 101, 236);
+    font-size: 20px;
 }
 
 .title {
@@ -95,8 +94,12 @@ nav a:hover {
 footer {
     background: #222;
     color: white;
-    padding: 10px;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+footer p {
+    padding: 10px;
 }
