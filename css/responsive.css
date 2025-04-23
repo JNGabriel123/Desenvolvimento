@@ -1,11 +1,5 @@
-@media (min-width: 768px) {
-    
-    .btn_menu {
-        display: none;
-    }
-}
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     body{
         font-size: 14px;
         gap: 0;
@@ -73,4 +67,34 @@
     .menu.open {
         left: 0;
       }
+}
+
+@media(min-width: 769px) and (max-width: 1023px) {
+
+    .btn_menu {
+        display: none;
+    }
+
+    header nav, .menu {
+        font-size: 15px;
+        gap: 50px;
+        
+    }
+
+    .menu a {
+        transition: 0.2s;
+        font-weight: bold;
+    }
+
+    .menu a:hover {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .btn_menu {
+        display: none;
+    }
 }
