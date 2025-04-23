@@ -46,9 +46,27 @@
         z-index: 1000;
     }
 
-    .logo{
-        height: 30px;
+    header, .image {
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .logo_text{
+        width: 30%;
+        height: 70%;
         margin: 5px;
+    }
+
+    .logo_text_mobile{
+        height: 55px;
+        margin: 5px;
+    }
+
+    .logo {
+        display: none;
     }
 
     .menu a {
@@ -90,11 +108,26 @@
         font-size: 16px;
     }
 
+    .logo_text_mobile {
+        display: none;
+    }
+
+    .logo_text {
+        display: none;
+    }
 
 }
 
 @media (min-width: 1024px) {
     .btn_menu {
+        display: none;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+    .logo_text_mobile {
         display: none;
     }
 }
