@@ -1,5 +1,4 @@
-
-@media (max-width: 768px) {
+@media (max-width: 480px) and (min-height: 20px) {
     body{
         font-size: 14px;
         gap: 0;
@@ -18,17 +17,110 @@
     }
 
     .btn_menu {
+        all: unset;
+        position: fixed;
+        top: 9px;
+        left: 9px;
+        font-size: 27px;
+        border-radius: 50%;
+        border: none;
+        z-index: 1001;
+        background-color: #f8f8f8b2;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        left: -250px;
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    header, .image {
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .logo_text{
+        width: 35%;
+        height: 60%;
+        margin: 5px;
+    }
+
+    .logo_text_mobile{
+        height: 55px;
+        margin: 5px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+    
+    .menu a:hover {
+        font-size: 15px;
+    }
+
+    .menu.open {
+        left: 0;
+      }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    body{
+        font-size: 14px;
+        gap: 0;
+    }
+
+    header {
+        background: #292929;
+        color: white;
+        padding-top: 1px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav, .menu{
+        gap: 55px;
+        font-size: 15px;
+    }
+
+    .btn_menu {
+        width: 50px;
+        height: 50px;
         position: fixed;
         top: 9px;
         left: 9px;
         font-size: 28px;
-        border-radius: 50px;
+        border-radius: 50%;
         border: none;
-        background: rgba(110, 110, 110, 0.514);
-        color: #fffefe;
         z-index: 1001;
-        cursor: pointer;
+        background-color: #f8f8f8b2;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .menu {
@@ -55,7 +147,7 @@
     }
 
     .logo_text{
-        width: 30%;
+        width: 25%;
         height: 70%;
         margin: 5px;
     }
@@ -77,8 +169,6 @@
     }
     
     .menu a:hover {
-        text-decoration: none;
-        color: rgb(38, 101, 236);
         font-size: 15px;
     }
 
