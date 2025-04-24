@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 480px) and (min-height: 20px) {
     body{
         font-size: 14px;
         gap: 0;
@@ -21,7 +21,7 @@
         top: 9px;
         left: 9px;
         font-size: 28px;
-        border-radius: 50px;
+        border-radius: 50%;
         border: none;
         z-index: 1001;
         display: flex;
@@ -111,7 +111,7 @@
         top: 9px;
         left: 9px;
         font-size: 28px;
-        border-radius: 50px;
+        border-radius: 50%;
         border: none;
         z-index: 1001;
         display: flex;
