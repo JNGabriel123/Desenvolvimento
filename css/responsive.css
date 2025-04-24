@@ -23,11 +23,11 @@
         font-size: 28px;
         border-radius: 50px;
         border: none;
-        background: rgba(110, 110, 110, 0.514);
-        color: #fffefe;
         z-index: 1001;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .menu {
@@ -109,11 +109,11 @@
         font-size: 28px;
         border-radius: 50px;
         border: none;
-        background: rgba(110, 110, 110, 0.514);
-        color: #fffefe;
         z-index: 1001;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
         text-align: center;
+        align-items: center;
     }
 
     .menu {
