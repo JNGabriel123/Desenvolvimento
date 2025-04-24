@@ -89,7 +89,11 @@ nav a:hover {
     padding: 20px;
 }
 
-.hidden {
+.content p {
+    font-size: 15px;
+}
+
+main .hidden {
     display: none;
 }
 
