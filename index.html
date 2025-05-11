@@ -6,9 +6,11 @@
     <title>Transforme Sua Vida</title>
     <link rel="stylesheet" href="./css/index-style.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="css/modulo.css">
     <link rel="shortcut icon" href="assets/img/fonts/icons/unmind_image.png" type="image/x-icon">
 </head>
 <body>
+    
     <script>
         function toggleMenu() {
             const menu = document.getElementById('menu');
@@ -33,26 +35,26 @@
                     <a href="#comunidade">Comunidade</a>
                     <a href="#suporte">Suporte</a>
                 </div>
+                
             </nav>
+            <div class="btn_login">
+                <a href="assets/pages/login/login.html"><button class="btn">Login</button></a>
+                    
+            </div>
         </div>
     </header>
     
-    <main>
-
-        <h1 class="title center">Mude Sua Vida Agora</h1>
-
-        <div>
-            <section class="intro">
-                <h2>Você quer mudar, mas não sabe como?</h2>
-                <p>Aqui você encontrará métodos práticos para vencer vícios, melhorar hábitos e transformar sua mentalidade.</p>
-                <button class="btn" onclick="toggleContent()">Saiba Mais</button>
-
-                <!-- Informar conteúdo que será exibido ao clicar em "saiba mais" -->
-                <div id="hiddenContent" class="content hidden">
-                    <h2><b>imlementação de conteudo</b></h2>
-                    <p>Conteudo para o site</p>
+    <main class="">
+        <div class="container">
+            <div class="marginModulo">
+                <div class="alignitems">
+                    <h1 style="color: white; font-size: 20px;">Comunicação</h1>
+                    <a href="assets/pages/modulo01.html"><img style="width: 180px; height: 220px;" src="assets/img/modulos/Capa comunicação.jpg" alt="" class="imgModul modul modulo01"></a>
                 </div>
-            </section>
+            </div>
+            <div class="modul modulo02">
+                <a href="assets/pages/modulo01.html"><img style="width: 180px; height: 220px;" src="assets/img/modulos/Capa- Ferramentas Digitais.jpg" alt="" class="imgModul"></a>
+            </div>
         </div>
     </main>
 
