@@ -4,117 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    body img{
-        margin-bottom: 20px;
-    }
-
-    .login-container {
-      background-color: #1e1e2f;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
-      width: 100%;
-      max-width: 400px;
-      text-align: center;
-      color: white;
-      animation: brilho-pulsante 2s ease-in-out infinite;
-    }
-
-    @keyframes brilho-pulsante {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(21, 134, 255, 0.603);
-  }
-  50% {
-    box-shadow: 0 0 25px rgb(3, 40, 145);
-  }
-}
-
-.modul:hover{
-    box-shadow: 0 0 20px rgba(0, 110, 255, 0.76);
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-    .login-container h2 {
-      margin-bottom: 30px;
-    }
-
-    .login-container input {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0 20px 0;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      font-size: 16px;
-    }
-
-    .login-container input[type="email"],
-    .login-container input[type="password"] {
-      background-color: #2e2e42;
-      color: white;
-    }
-
-    .login-container button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 20px;
-      background-color: #007bff;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .login-container button:hover {
-      background-color: #0056b3;
-    }
-
-    .login-container p {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    .login-container p a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .login-container p a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
   <div class="login-container">
     <img src="/assets/img/unmind_image.png" alt="">
-    <form>
-      <input type="email" placeholder="E-mail" required>
-      <input type="password" placeholder="Senha" required>
+    <form action="/sql/login.php" method="post">
+        <input type="email" placeholder="E-mail" required>
+        <div class="senha-container">
+            <input type="password" id="senha" placeholder="Senha" required>
+            <img src="image/olho-aberto.png" id="iconeSenha" class="toggle-senha" onclick="toggleSenha()" alt="Mostrar senha">
+        </div>
       <button type="submit">Entrar</button>
     </form>
     <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
   </div>
+  <script>
+    function toggleSenha() {
+        const senhaInput = document.getElementById('senha');
+        const icone = document.getElementById('iconeSenha');
 
+        if (senhaInput.type === 'password') {
+            senhaInput.type = 'text';
+            icone.src = 'image/olho-fechado.png'; // troca para olho fechado
+            icone.alt = 'Ocultar senha';
+        } else {
+            senhaInput.type = 'password';
+            icone.src = 'image/olho-aberto.png'; // volta para olho aberto
+            icone.alt = 'Mostrar senha';
+        }
+    }
+  </script>
 </body>
 </html>
