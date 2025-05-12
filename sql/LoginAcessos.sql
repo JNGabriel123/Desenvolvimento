@@ -1,5 +1,3 @@
-CREATE DATABASE sistema;
-
 USE sistema;
 
 CREATE TABLE usuarios (
@@ -13,3 +11,5 @@ CREATE TABLE usuarios (
 INSERT INTO usuarios (nome, email, senha) VALUES
 ('Gabriel', 'gabriel@email.com', '123456'),
 ('Thaylon', 'thaylon@email.com', '654321');
+
+select * from usuarios;

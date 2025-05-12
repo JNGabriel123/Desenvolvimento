@@ -11,9 +11,9 @@
   <div class="login-container">
     <img src="/assets/img/unmind_image.png" alt="">
     <form action="/sql/login.php" method="post">
-        <input type="email" placeholder="E-mail" required>
+        <input type="email" name="email" placeholder="Email" required>
         <div class="senha-container">
-            <input type="password" id="senha" placeholder="Senha" required>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
             <img src="image/olho-aberto.png" id="iconeSenha" class="toggle-senha" onclick="toggleSenha()" alt="Mostrar senha">
         </div>
       <button type="submit">Entrar</button>
