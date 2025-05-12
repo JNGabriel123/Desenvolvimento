@@ -1,27 +1,40 @@
 main .container {
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     display: flex;
     /* align-items: center; */
 }
 
-.marginModulo{
-    
+.container .modul {
+
+  border-radius: 10%;
+}
+
+
+main h1, a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .alignitems{
-    
+  background-color: rgba(95, 95, 95, 0.521);
+  /* box-shadow: 0 0 20px rgba(39, 39, 39, 0.795); */
+  border-radius: 8%;
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  height: 260px;
 }
 
 main .imgModul {
-    border-radius: 10%;
+  border-radius: 10%;
 }
 
 .modul{
     display: flex;
     border: 0;
-    border-radius: 10%;
-    box-shadow: 0 0 20px rgba(57, 137, 241, 0.795);
+    /* box-shadow: 0 0 20px rgba(57, 137, 241, 0.795); */
     animation: brilho-pulsante 2s ease-in-out infinite;
 }
 
@@ -34,8 +47,7 @@ main .imgModul {
   }
 }
 
-.modul:hover{
-    box-shadow: 0 0 20px rgba(0, 110, 255, 0.76);
+main .alignitems:hover{
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
