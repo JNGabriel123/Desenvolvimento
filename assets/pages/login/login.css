@@ -6,11 +6,21 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 body img{
@@ -18,7 +28,7 @@ body img{
 }
 
 .login-container {
-    background-color: #1e1e2f;
+    background-color: #313131;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
