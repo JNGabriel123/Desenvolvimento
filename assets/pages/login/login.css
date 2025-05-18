@@ -17,8 +17,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
@@ -28,7 +28,7 @@ body img{
 }
 
 .login-container {
-    background-color: #313131;
+    background-color: #222222;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
