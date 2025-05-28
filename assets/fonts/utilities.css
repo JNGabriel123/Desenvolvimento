@@ -1,0 +1,23 @@
+.text-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007cf0; /* tom vibrante para destacar */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.text-body {
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.text-highlight {
+  color: #cfcfcf;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}

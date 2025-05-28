@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transforme Sua Vida</title>
+    <link rel="stylesheet" href="/css/style_pricipal.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="formatacao/modulo.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/icons/unmind_image.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/fonts/utilities.css" />
+  </head>
+  <body>
+    <style>
+      .menu .modulo {
+        color: rgb(38, 101, 236);
+        font-size: 19px;
+      }
+    </style>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        const button = document.querySelector(".btn_menu");
+        const isOpen = menu.classList.toggle("open");
+        button.setAttribute("aria-expanded", isOpen);
+      }
+    </script>
+    <header>
+      <div class="header">
+        <div class="image">
+          <a href="index.html"
+            ><img src="assets/img/unmind_image.png" alt="Logo" class="logo"
+          /></a>
+          <img src="/assets/img/UNIMIND.png" alt="logo" class="logo_text" />
+          <img
+            src="/assets/img/unmind_logo.png"
+            alt=""
+            class="logo_text_mobile"
+          />
+        </div>
+
+        <button
+          class="btn_menu"
+          onclick="toggleMenu()"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav>
+          <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="#modulo" class="modulo">Modulos</a>
+            <a href="#comunidade">Comunidade</a>
+            <a href="#suporte">Suporte</a>
+          </div>
+        </nav>
+        <div class="btn_login">
+          <a href="assets/pages/login/login.html"
+            ><button class="btn">Login</button></a
+          >
+        </div>
+      </div>
+    </header>
+    <div class="containerModulo">
+        <h1 class="text-title">Bem-vindo à sua jornada de evolução</h1>
+        <p class="text-body">
+          Aqui é onde tudo começa. Esta é a sua central de aprendizado — com todos
+          os módulos essenciais para desenvolver habilidades, mudar hábitos e
+          transformar sua mentalidade.
+        </p>
+        <p class="text-highlight">
+          Explore os conteúdos abaixo e comece por onde fizer mais sentido para
+          você. O mais importante é dar o primeiro passo.
+        </p>
+        <main class="">
+          <div class="container">
+            <div class="marginModulo">
+              <div class="alignitems">
+                <h1 style="color: white; font-size: 19px">Comunicação</h1>
+                <a href="assets/pages/modulo01.html"
+                  ><img
+                    src="assets/img/modulos/Capa comunicação.jpg"
+                    alt=""
+                    class="imgModul modul modulo01"
+                    style="max-width: 55%"
+                /></a>
+              </div>
+            </div>
+            <div class="marginModulo">
+              <div class="alignitems">
+                <h1 style="color: white; font-size: 19px">Ferramentas Digitais</h1>
+                <a href="/assets/img/modulos/Capa comunicação.jpg"
+                  ><img
+                    src="assets/img/modulos/Capa- Ferramentas Digitais.jpg"
+                    alt=""
+                    class="imgModul modul modulo01"
+                    style="max-width: 55%"
+                /></a>
+              </div>
+            </div>
+            <div class="marginModulo">
+              <div class="alignitems">
+                <h1 style="color: white; font-size: 19px">Mentalidade</h1>
+                <a href="assets/pages/modulo01.html"
+                  ><img
+                    src="assets/img/modulos/CapaMentalidade.jpg"
+                    alt=""
+                    class="imgModul modul modulo01"
+                    style="max-width: 55%"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Transforme Sua Vida. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/interação.js"></script>
+  </body>
+</html>

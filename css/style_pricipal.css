@@ -19,7 +19,7 @@ header nav, .menu{
     display: flex;
     align-items: center;
     gap: 100px;
-    font-size: 18px;
+    font-size: 19px;
     margin: auto;
     
 }
@@ -39,20 +39,15 @@ header nav, .menu{
 }
 
 
-
-
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.2s;
-    animation-delay: 1s;
 }
 
 nav a:hover {
     text-decoration: none;
     color: rgb(38, 101, 236);
-    font-size: 20px;
 }
 
 .title {
@@ -85,17 +80,9 @@ nav a:hover {
     background: #0056b3;
 }
 
-/* .content {
-    padding: 20px;
-} */
-
 .content p {
     font-size: 15px;
 }
-
-/* main .hidden {
-    display: none;
-} */
 
 footer {
     background: #222;
