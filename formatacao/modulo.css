@@ -1,6 +1,6 @@
 .containerModulo {
   
-  background-color: rgb(66, 82, 92);
+  background-color: rgb(41, 41, 41);
 }
 
 main .container {
@@ -14,29 +14,10 @@ main .container {
   border-radius: 10%;
 }
 
-main h1,
-a {
+main .subCntainer a {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-main a {
-  width: 100%;
-  left: 10px;
-  right: 10px;
-}
-
-main .marginModulo {
-  max-width: 15%;
-  height: 20%;
-  width: 20%;
-}
-
-.alignitems {
-  background-color: rgba(95, 95, 95, 0.521);
-  box-shadow: 0 0 20px rgba(39, 39, 39, 0.795);
-  border-radius: 8%;
+  text-align: center;
 }
 
 main .imgModul {
@@ -46,7 +27,6 @@ main .imgModul {
 .modul {
   display: flex;
   border: 0;
-  /* box-shadow: 0 0 20px rgba(57, 137, 241, 0.795); */
   animation: brilho-pulsante 2s ease-in-out infinite;
 }
 
@@ -60,7 +40,7 @@ main .imgModul {
   }
 }
 
-main .alignitems:hover {
+main .subCntainer:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }

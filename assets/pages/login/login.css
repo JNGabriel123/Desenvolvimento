@@ -13,7 +13,7 @@ body {
     align-items: center;
 }
 
-#bg-video {
+#bg-image {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,14 +29,22 @@ body img{
 
 .login-container {
     background-color: #222222;
-    padding: 40px;
+    padding: 40px 80px;
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 123, 255, 0.3);
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
     color: white;
     animation: brilho-pulsante 2s ease-in-out infinite;
+    display: flex;
+}
+
+.login-container, img form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @keyframes brilho-pulsante {
@@ -70,19 +78,23 @@ body img{
 
 .login-container input[type="email"],
 .login-container input[type="password"] {
-    background-color: #2e2e42;
-    color: white;
+    background-color: #3d4149;
+    color: rgb(251, 255, 252);
 }
+
 
 .senha-container {
     position: relative;
-    width: 100%;
+}
+
+.email_container {
+    width: 110%;
 }
 
 .senha-container input {
-    width: 100%;
+    width: 110%;
     padding: 12px 40px 12px 12px;
-    background-color: #2e2e42;
+    background-color: #2d2d4e;
     color: white;
     border: none;
     border-radius: 8px;
@@ -107,8 +119,9 @@ body img{
     background-color: #007bff;
     border: none;
     border-radius: 8px;
-    color: white;
-    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
 }

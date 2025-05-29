@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-  <link rel="stylesheet" href="login.css">
-</head>
-<body>
-  <video autoplay muted loop id="bg-video">
-    <source src="./image/login 02.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos em HTML5.
-  </video>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/icons/unmind_image.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <img src="image/Fundo_abstrato.jpg" alt="" id="bg-image" />
 
-  <div class="login-container">
-    <img src="../login/image/unmind_image_login.png" alt="">
-    <form action="/sql/login.php" method="post">
-        <input type="email" name="email" placeholder="Email" required>
-        <div class="senha-container">
-            <input type="password" name="senha" id="senha" placeholder="Senha" required>
-            <img src="image/olho-aberto.png" id="iconeSenha" class="toggle-senha" onclick="toggleSenha()" alt="Mostrar senha">
+    <div class="login-container">
+      <img src="../login/image/unmind_image_login.png" alt="" />
+      <form action="/sql/login.php" method="post">
+        <div class="email_container">
+          <input type="email" name="email" placeholder="Email" required />
         </div>
-      <button type="submit">Entrar</button>
-    </form>
-    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
-  </div>
-  <script>
-    function toggleSenha() {
-        const senhaInput = document.getElementById('senha');
-        const icone = document.getElementById('iconeSenha');
+        <div class="senha-container">
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            placeholder="Senha"
+            required
+          />
+          <img
+            src="image/olho-aberto.png"
+            id="iconeSenha"
+            class="toggle-senha"
+            onclick="toggleSenha()"
+            alt="Mostrar senha"
+          />
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </div>
+    <script>
+      function toggleSenha() {
+        const senhaInput = document.getElementById("senha");
+        const icone = document.getElementById("iconeSenha");
 
-        if (senhaInput.type === 'password') {
-            senhaInput.type = 'text';
-            icone.src = 'image/olho-fechado.png'; // troca para olho fechado
-            icone.alt = 'Ocultar senha';
+        if (senhaInput.type === "password") {
+          senhaInput.type = "text";
+          icone.src = "image/olho-fechado.png"; // troca para olho fechado
+          icone.alt = "Ocultar senha";
         } else {
-            senhaInput.type = 'password';
-            icone.src = 'image/olho-aberto.png'; // volta para olho aberto
-            icone.alt = 'Mostrar senha';
+          senhaInput.type = "password";
+          icone.src = "image/olho-aberto.png"; // volta para olho aberto
+          icone.alt = "Mostrar senha";
         }
-    }
-  </script>
-</body>
+      }
+    </script>
+  </body>
 </html>
