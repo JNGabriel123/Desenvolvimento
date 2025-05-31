@@ -1,16 +1,22 @@
-.containerModulo {
-  
+.container {
+  background-color: rgb(77, 77, 77);
+}
+
+.boxModulo {
   background-color: rgb(41, 41, 41);
+  width: 80%;
 }
 
-main .container {
-  justify-content: center;
-  gap: 40px;
+main {
+  width: 90%;
+}
+
+main .containerModulos {
+  gap: 20px;
   display: flex;
-  /* align-items: center; */
 }
 
-.container .modul {
+.containerModulos .modul {
   border-radius: 10%;
 }
 
@@ -43,4 +49,9 @@ main .imgModul {
 main .subCntainer:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
+}
+
+.asidecontainer {
+  background-color: white;
+  margin-bottom: 155%;
 }
