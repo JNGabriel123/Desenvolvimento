@@ -15,13 +15,18 @@
     />
     <link rel="stylesheet" href="assets/fonts/utilities.css" />
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <style>
       .menu .modulo {
         color: rgb(38, 101, 236);
         font-size: 19px;
+      }
+
+      .poitsFormat{
+        width: 10%;
+        height: 20px;
       }
     </style>
 
@@ -76,16 +81,16 @@
           <div class="textContainer">
             <h1 class="text-title">Bem-vindo à sua jornada de evolução</h1>
             <p class="text-body">
-              Aqui é onde tudo começa. Esta é a sua central de aprendizado — com todos
-              os módulos essenciais para desenvolver habilidades, mudar hábitos e
-              transformar sua mentalidade.
+              Aqui é onde tudo começa. Esta é a sua central de aprendizado — com
+              todos os módulos essenciais para desenvolver habilidades, mudar
+              hábitos e transformar sua mentalidade.
             </p>
             <p class="text-highlight">
-              Explore os conteúdos abaixo e comece por onde fizer mais sentido para
-              você. O mais importante é dar o primeiro passo.
+              Explore os conteúdos abaixo e comece por onde fizer mais sentido
+              para você. O mais importante é dar o primeiro passo.
             </p>
           </div>
-        
+
           <div class="containerModulos">
             <div class="subCntainer">
               <a href="assets/pages/modules/modulo01.html"
@@ -104,7 +109,7 @@
                   alt=""
                   class="imgModul modul modulo01"
                   style="max-width: 90%"
-                  />
+                />
               </a>
             </div>
             <div class="subCntainer">
@@ -130,9 +135,18 @@
           </div>
         </div>
       </main>
-      <aside class="sidebar aside">        
+      <aside class="sidebar aside">
         <div class="asidecontainer">
           <h2 class="aside-title">Pontuação</h2>
+          <div id="score-panel" style="width: 300px; margin: 20px">
+            <canvas id="pointsChart" class="poitsFormat"></canvas>
+            <p id="scoreText">
+              Você tem 0 pontos. Faltam 10 para subir de nível!
+            </p>
+
+            <button onclick="addPoints(1)">Concluiu vídeo (+1)</button>
+            <button onclick="addPoints(2)">Fez resumo (+2)</button>
+          </div>
         </div>
       </aside>
     </div>
@@ -142,5 +156,6 @@
     </footer>
 
     <script src="js/interação.js"></script>
+    <script src="js/points.js"></script>
   </body>
 </html>
