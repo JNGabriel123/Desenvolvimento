@@ -14,7 +14,7 @@ const chart = new Chart(ctx, {
     }]
   },
   options: {
-    cutout: '80%',
+    cutout: '70%',
     responsive: true,
     plugins: {
       tooltip: { enabled: false },

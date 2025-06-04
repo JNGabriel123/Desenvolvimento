@@ -23,6 +23,13 @@
         color: rgb(38, 101, 236);
         font-size: 19px;
       }
+
+      aside .poitsFormat {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        
+      }
     </style>
 
     <script>
@@ -127,13 +134,23 @@
                 />
               </a>
             </div>
+            <div class="subCntainer">
+              <a href="assets/pages/modules/modulo05.html">
+                <img
+                  src="assets/img/modulos/mentalidadeImpre.jpg"
+                  alt=""
+                  class="imgModul modul modulo01"
+                  style="max-width: 90%"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </main>
       <aside class="sidebar aside">
         <div class="asidecontainer">
           <h2 class="aside-title">Pontuação</h2>
-          <div id="score-panel" style="width: 300px; margin: 20px">
+          <div id="score-panel" class="score-panel" style="margin: 20px">
             <canvas id="pointsChart" class="poitsFormat"></canvas>
             <p id="scoreText">
               Você tem 0 pontos. Faltam 10 para subir de nível!
@@ -141,6 +158,7 @@
 
             <button onclick="addPoints(1)">Concluiu vídeo (+1)</button>
             <button onclick="addPoints(2)">Fez resumo (+2)</button>
+            <button onclick="addPoints(5)">Concluiu um modulo (+5)</button>
           </div>
         </div>
       </aside>

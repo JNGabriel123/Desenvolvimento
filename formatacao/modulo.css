@@ -1,5 +1,6 @@
 .container {
   background-color: rgb(77, 77, 77);
+  display: flex;
 }
 
 .boxModulo {
@@ -9,6 +10,7 @@
 
 main {
   width: 90%;
+  flex: 1;
 }
 
 main .containerModulos {
@@ -20,11 +22,13 @@ main .containerModulos {
   border-radius: 10%;
 }
 
-main .subCntainer a {
+.containerModulos {
   display: flex;
-  justify-content: center;
-  text-align: center;
-}
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+} 
+
 
 main .imgModul {
   border-radius: 10%;
@@ -51,7 +55,17 @@ main .subCntainer:hover {
   transition: all 0.3s ease;
 }
 
+
+aside .score-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 .asidecontainer {
+  text-align: center;
   background-color: white;
-  margin-bottom: 155%;
+  margin-bottom: 10%;
+  
 }
