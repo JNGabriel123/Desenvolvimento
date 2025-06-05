@@ -14,7 +14,7 @@ const chart = new Chart(ctx, {
     }]
   },
   options: {
-    cutout: '80%',
+    cutout: '70%',
     responsive: true,
     plugins: {
       tooltip: { enabled: false },
@@ -41,4 +41,3 @@ function updateChart() {
   document.getElementById('scoreText').textContent =
     `Você tem ${currentPoints} pontos. Faltam ${levelThreshold - currentPoints} para subir ao nível ${level + 1}`;
 }
-
