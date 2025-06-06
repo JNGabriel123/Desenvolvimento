@@ -1,5 +1,5 @@
 let currentPoints = 0;
-let level = 1;
+let level = 0;
 let levelThreshold = 10;
 
 const ctx = document.getElementById("pointsChart").getContext("2d");
@@ -54,4 +54,6 @@ function updateChart() {
   ).textContent = `Você tem ${currentPoints} pontos. Faltam ${
     levelThreshold - currentPoints
   } para subir ao nível ${level + 1}`;
+
+  document.getElementById("levelText").textContent = `Level ${level}`;
 }

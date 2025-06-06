@@ -6,16 +6,18 @@
     <title>Transforme Sua Vida</title>
     <link rel="stylesheet" href="css/style_pricipal.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="formatacao/modulo.css" />
+    <link rel="stylesheet" href="css/modulo.css" />
     <link rel="stylesheet" href="formatacao/alings.css" />
     <link
       rel="shortcut icon"
       href="assets/img/icons/unmind_image.png"
       type="image/x-icon"
     />
+
     <link rel="stylesheet" href="assets/fonts/utilities.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <style>
@@ -25,13 +27,11 @@
       }
 
       aside .poitsFormat {
-        max-width: 80%;
-        display: flex;
+        max-width: 50%;
+        max-height: 47%;
         justify-content: center;
-        
       }
     </style>
-
     <script>
       function toggleMenu() {
         const menu = document.getElementById("menu");
@@ -53,7 +53,6 @@
             class="logo_text_mobile"
           />
         </div>
-
         <button
           class="btn_menu"
           onclick="toggleMenu()"
@@ -66,93 +65,95 @@
           <div class="menu" id="menu">
             <a href="index.html">Home</a>
             <a href="#modulo" class="modulo">Modulos</a>
-            <a href="teste.html" class="modulo">Modulos 02</a>
             <a href="#comunidade">Comunidade</a>
             <a href="#suporte">Suporte</a>
           </div>
         </nav>
-        <div class="btn_login">
+        <div class="">
           <a href="assets/pages/login/login.html"
-            ><button class="btn">Login</button></a
+            class="btn btn_login" ><button>Login</button></a
           >
-        </div>
       </div>
     </header>
+
     <div class="container">
       <main class="main">
-        <div class="boxModulos">
-          <div class="textContainer">
-            <h1 class="text-title">Bem-vindo à sua jornada de evolução</h1>
-            <p class="text-body">
-              Aqui é onde tudo começa. Esta é a sua central de aprendizado — com
-              todos os módulos essenciais para desenvolver habilidades, mudar
-              hábitos e transformar sua mentalidade.
-            </p>
-            <p class="text-highlight">
-              Explore os conteúdos abaixo e comece por onde fizer mais sentido
-              para você. O mais importante é dar o primeiro passo.
-            </p>
-          </div>
+        <h1 class="text-title">Bem-vindo à sua jornada de evolução</h1>
+        <p class="text-body">
+          Esta é a sua central de aprendizado — com todos os módulos essenciais
+          para desenvolver habilidades, mudar hábitos e transformar sua
+          mentalidade.
+        </p>
 
-          <div class="containerModulos">
-            <div class="subCntainer">
-              <a href="assets/pages/modules/modulo01.html"
-                ><img
-                  src="assets/img/modulos/Capa comunicação.jpg"
-                  alt=""
-                  class="imgModul modul modulo01"
-                  style="max-width: 90%"
-                />
-              </a>
+        <div class="modules-grid">
+          <a href="assets/pages/modules/modulo01.html" class="module-card">
+            <img
+              src="assets/img/modulos/Capa comunicação.jpg"
+              alt="Módulo 1"
+              class="module-img"
+            />
+            <div class="module-info">
+              <h3>Módulo 1</h3>
+              <p>Status: 🔓 Em progresso</p>
             </div>
-            <div class="subCntainer">
-              <a href="assets/pages/modules/modulo02.html"
-                ><img
-                  src="assets/img/modulos/Capa- Ferramentas Digitais.jpg"
-                  alt=""
-                  class="imgModul modul modulo01"
-                  style="max-width: 90%"
-                />
-              </a>
+          </a>
+
+          <a href="assets/pages/modules/modulo02.html" class="module-card">
+            <img
+              src="assets/img/modulos/Capa- Ferramentas Digitais.jpg"
+              alt="Módulo 2"
+              class="module-img"
+            />
+            <div class="module-info">
+              <h3>Módulo 2</h3>
+              <p>Status: ✅ Concluído</p>
             </div>
-            <div class="subCntainer">
-              <a href="assets/pages/modules/modulo03.html">
-                <img
-                  src="assets/img/modulos/CapaMentalidade.jpg"
-                  alt=""
-                  class="imgModul modul modulo01"
-                  style="max-width: 90%"
-                />
-              </a>
+          </a>
+
+          <a href="assets/pages/modules/modulo03.html" class="module-card">
+            <img
+              src="assets/img/modulos/CapaMentalidade.jpg"
+              alt="Módulo 3"
+              class="module-img"
+            />
+            <div class="module-info">
+              <h3>Módulo 3</h3>
+              <p>Status: 🔒 Bloqueado</p>
             </div>
-            <div class="subCntainer">
-              <a href="assets/pages/modules/modulo04.html">
-                <img
-                  src="assets/img/modulos/mentalidade.jpg"
-                  alt=""
-                  class="imgModul modul modulo01"
-                  style="max-width: 90%"
-                />
-              </a>
+          </a>
+
+          <a href="assets/pages/modules/modulo04.html" class="module-card">
+            <img
+              src="assets/img/modulos/mentalidade.jpg"
+              alt="Módulo 4"
+              class="module-img"
+            />
+            <div class="module-info">
+              <h3>Módulo 4</h3>
+              <p>Status: 🔓 Em progresso</p>
             </div>
-            <div class="subCntainer">
-              <a href="assets/pages/modules/modulo05.html">
-                <img
-                  src="assets/img/modulos/mentalidadeImpre.jpg"
-                  alt=""
-                  class="imgModul modul modulo01"
-                  style="max-width: 90%"
-                />
-              </a>
+          </a>
+
+          <a href="assets/pages/modules/modulo05.html" class="module-card">
+            <img
+              src="assets/img/modulos/mentalidadeImpre.jpg"
+              alt="Módulo 5"
+              class="module-img"
+            />
+            <div class="module-info">
+              <h3>Módulo 5</h3>
+              <p>Status: 🔒 Bloqueado</p>
             </div>
-          </div>
+          </a>
         </div>
       </main>
+
       <aside class="sidebar aside">
         <div class="asidecontainer">
-          <h2 class="aside-title">Pontuação</h2>
-          <div id="score-panel" class="progress-ring" style="margin: 20px">
+          <h2 class="aside-title" style="color: white;">Pontuação</h2>
+          <div id="score-panel" class="score-panel" style="margin: 20px">
             <canvas id="pointsChart" class="poitsFormat"></canvas>
+            <p id="levelText" class="level-text">Level 0</p>
             <p id="scoreText" class="score-text">
               Você tem 0 pontos. Faltam 10 para subir de nível!
             </p>
@@ -168,7 +169,7 @@
     <footer>
       <p>&copy; 2025 Transforme Sua Vida. Todos os direitos reservados.</p>
     </footer>
-
+    
     <script src="js/interação.js"></script>
     <script src="js/points.js"></script>
   </body>

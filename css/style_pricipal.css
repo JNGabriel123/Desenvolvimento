@@ -1,99 +1,117 @@
 html body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #353535;
-    color: #333;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #222222;
+  color: #f5f5f5;
 }
 
 header {
-    background: #292929;
-    color: white;
-    padding-top: 1px;
-    border-radius: 0 0 10px 10px;
+  background: #111111;
+  color: white;
+  padding-top: 1px;
+  border-radius: 0 0 10px 10px;
 }
 
-
-header nav, .menu{
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    font-size: 19px;
-    margin: auto;
-    
+header nav,
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  font-size: 19px;
+  margin: auto;
 }
 
 .header {
-    display: flex;
-    margin: 13px;
+  display: flex;
+  margin: 13px;
 }
 
 .image {
-    margin: 5px;
+  margin: 5px;
 }
 
-.logo{
-    height: 70px;
-    margin: 5px;
+.logo {
+  height: 70px;
+  margin: 5px;
 }
-
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: none;
-    color: rgb(38, 101, 236);
+  text-decoration: none;
+  color: rgb(38, 101, 236);
 }
 
 .title {
-    text-align: center;
-    flex: 2;
-    font-size: 24px;
-    color: white;
+  text-align: center;
+  flex: 2;
+  font-size: 24px;
+  color: white;
 }
 
 .intro {
-    padding: 40px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn_login {
+  background: radial-gradient(circle at top left, #5533ff, #220044);
+  color: #fff;
+  border: 2px solid #9955ff;
+  padding: 10px 22px;
+  font-size: 16px;
+  font-family: "Cinzel", serif; /* fonte com estilo místico */
+  border-radius: 12px;
+  text-shadow: 0 0 5px #aa66ff;
+  box-shadow: 0 0 15px #5500ff88;
+  transition: all 0.4s ease;
+}
+
+.btn_login:hover {
+  background: #aa66ff;
+  color: #000;
+  transform: translateY(-2px);
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition-delay: 0.5s;
+  display: inline-block;
+  /* padding: 10px 20px; */
+  background: #202020;
+  border: none;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition-delay: 0.5s;
 }
 
-.btn:hover {
-    background: #0056b3;
+button {
+  text-decoration: none;
+  background: none;
 }
 
 .content p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 footer {
-    background: #222;
-    color: white;
-    /* position: fixed; */
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    border-radius: 20px 20px 0 0;
+  background: #222;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px 20px 0 0;
 }
 
 footer p {
-    padding: 10px;
+  padding: 10px;
 }
