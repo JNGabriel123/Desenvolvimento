@@ -13,32 +13,39 @@
     />
   </head>
   <body>
-    <img src="image/Fundo_abstrato.jpg" alt="" id="bg-image" />
+    <img src="image/ChatOn image.jpg" alt="" id="bg-image" />
 
     <div class="login-container">
       <img src="../login/image/unmind_image_login.png" alt="" />
-      <form action="/sql/login.php" method="post">
-        <div class="email_container">
-          <input type="email" name="email" placeholder="Email" required />
-        </div>
-        <div class="senha-container">
-          <input
-            type="password"
-            name="senha"
-            id="senha"
-            placeholder="Senha"
-            required
-          />
-          <img
-            src="image/olho-aberto.png"
-            id="iconeSenha"
-            class="toggle-senha"
-            onclick="toggleSenha()"
-            alt="Mostrar senha"
-          />
-        </div>
-        <button type="submit">Entrar</button>
-      </form>
+
+      <div class="form-container">
+        <form action="/sql/login.php" method="post">
+          <div class="email_container">
+            <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required />
+          </div>
+          <div class="senha-container">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Senha"
+              required
+            />
+            <img
+              src="image/olho-aberto.png"
+              id="iconeSenha"
+              class="toggle-senha"
+              onclick="toggleSenha()"
+              alt="Mostrar senha"
+            />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
       <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
     </div>
     <script>

@@ -6,7 +6,6 @@
 
 body {
     height: 100vh;
-    /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
     font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
@@ -38,13 +37,16 @@ body img{
     color: white;
     animation: brilho-pulsante 2s ease-in-out infinite;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input::placeholder  {
+        color: #ffffffc4;
+    }
 }
 
 .login-container, img form {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 @keyframes brilho-pulsante {
@@ -56,30 +58,36 @@ body img{
 }
 }
 
-.modul:hover{
+/* .modul:hover{
     box-shadow: 0 0 20px rgba(0, 110, 255, 0.76);
     transform: scale(1.05);
     transition: all 0.3s ease;
-}
+} */
 
 .login-container h2 {
     margin-bottom: 30px;
 }
 
 .login-container input {
-    width: 100%;
+    /* width: 100%;
     padding: 12px;
     margin: 10px 0 10px 0;
     border: none;
     border-radius: 8px;
     outline: none;
-    font-size: 16px;
+    font-size: 16px; */
 }
 
 .login-container input[type="email"],
 .login-container input[type="password"] {
-    background-color: #3d4149;
-    color: rgb(251, 255, 252);
+    background-color: #828283;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -87,19 +95,21 @@ body img{
     position: relative;
 }
 
-.email_container {
+/* .email_container {
     width: 110%;
-}
+} */
 
-.senha-container input {
+/* .senha-container input {
     width: 110%;
     padding: 12px 40px 12px 12px;
-    background-color: #2d2d4e;
-    color: white;
+    background-color: #79c8ec;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
     font-size: 16px;
-}
+
+    
+} */
 
 .toggle-senha {
     position: absolute;

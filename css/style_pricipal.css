@@ -26,6 +26,7 @@ header nav,
 .header {
   display: flex;
   margin: 13px;
+  align-items: center;
 }
 
 .image {
@@ -41,11 +42,13 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.2s ease;
 }
 
 nav a:hover {
   text-decoration: none;
-  color: rgb(38, 101, 236);
+  color: rgb(10, 175, 252);
+  transform: translateY(-2px);
 }
 
 .title {
@@ -64,39 +67,43 @@ nav a:hover {
 }
 
 .btn_login {
-  background: radial-gradient(circle at top left, #5533ff, #220044);
-  color: #fff;
-  border: 2px solid #9955ff;
-  padding: 10px 22px;
-  font-size: 16px;
-  font-family: "Cinzel", serif; /* fonte com estilo místico */
+  background: radial-gradient(circle at top left, #3352ff, #001644);
+  border: 1px solid #5590ff;
   border-radius: 12px;
-  text-shadow: 0 0 5px #aa66ff;
-  box-shadow: 0 0 15px #5500ff88;
+  text-shadow: 0 0 5px #66adffda;
+  box-shadow: 0 0 15px #0400ff88;
   transition: all 0.4s ease;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .btn_login:hover {
-  background: #aa66ff;
-  color: #000;
+  background: #66dbff;
   transform: translateY(-2px);
+
+  button {
+    color: #000;
+
+  }
 }
 
 .btn {
-  display: inline-block;
-  /* padding: 10px 20px; */
-  background: #202020;
+  padding: 2px;
   border: none;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 
 button {
-  text-decoration: none;
+  color: white;
   background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .content p {
@@ -104,7 +111,7 @@ button {
 }
 
 footer {
-  background: #222;
+  background: #141414;
   color: white;
   bottom: 0;
   width: 100%;
